@@ -1,95 +1,279 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+import GsapAnimation from "./components/GsapAnimation";
+import Dropdown from "./components/Dropdown";
 
 export default function Home() {
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol>
-          <li>
-            Get started by editing <code>app/page.js</code>.
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.secondary}
-          >
-            Read our docs
-          </a>
-        </div>
+    <div className="page-wrapper">
+      <div className="background" aria-hidden="true"></div>
+      <main role="main">
+        <header>
+          <nav>
+            <ul>
+              <li>
+                <a href="/" className="nav-services">
+                  <span className="bullet">•</span>
+                  Our services
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://justincefai.dev"
+                  target="blank"
+                  rel="noopener noreferrer"
+                  className="nav-work"
+                >
+                  Let's work together
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </header>
+        <section className="page-content">
+          <div className="title-wrapper">
+            <h1 className="title">
+              <div className="front">FRONT</div>
+              <div className="back">BACK</div>
+            </h1>
+            <div className="title end">END</div>
+          </div>
+          <div className="menu-wrapper">
+            <h2 className="services-title">(Front End Services)</h2>
+            <ul className="dropdown-list frontend">
+              <li className="accordion-item">
+                <button className="accordion-header" aria-expanded="false">
+                  <h3>Creative Development</h3>
+                  <span className="icon"></span>
+                </button>
+                <div
+                  className="accordion-content"
+                  role="region"
+                  aria-hidden="true"
+                >
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Voluptatem facere cupiditate consectetur quasi quidem
+                    molestiae, voluptatibus praesentium quo earum, nobis dolor
+                    vel saepe culpa eius consequuntur quas suscipit officiis
+                    maxime?
+                  </p>
+                </div>
+              </li>
+              <li className="accordion-item">
+                <button className="accordion-header" aria-expanded="false">
+                  <h3>Animation</h3>
+                  <span className="icon"></span>
+                </button>
+                <div
+                  className="accordion-content"
+                  role="region"
+                  aria-hidden="true"
+                >
+                  <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Ipsam in dolores quibusdam doloribus aut animi ipsa quos
+                    repudiandae aperiam impedit laudantium at, suscipit quod,
+                    amet non, molestiae magni! Explicabo, cupiditate?
+                  </p>
+                </div>
+              </li>
+              <li className="accordion-item">
+                <button className="accordion-header" aria-expanded="false">
+                  <h3>Landing Pages</h3>
+                  <span className="icon"></span>
+                </button>
+                <div
+                  className="accordion-content"
+                  role="region"
+                  aria-hidden="true"
+                >
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Iusto maiores provident quis rem quasi, quisquam odio
+                    doloremque omnis sequi quos nisi accusantium sint dolorum
+                    laboriosam quae eos exercitationem, commodi eligendi.
+                  </p>
+                </div>
+              </li>
+              <li className="accordion-item">
+                <button className="accordion-header" aria-expanded="false">
+                  <h3>Performance Optimizaion</h3>
+                  <span className="icon"></span>
+                </button>
+                <div
+                  className="accordion-content"
+                  role="region"
+                  aria-hidden="true"
+                >
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Iusto maiores provident quis rem quasi, quisquam odio
+                    doloremque omnis sequi quos nisi accusantium sint dolorum
+                    laboriosam quae eos exercitationem, commodi eligendi.
+                  </p>
+                </div>
+              </li>
+              <li className="accordion-item">
+                <button className="accordion-header" aria-expanded="false">
+                  <h3>Landing Pages</h3>
+                  <span className="icon"></span>
+                </button>
+                <div
+                  className="accordion-content"
+                  role="region"
+                  aria-hidden="true"
+                >
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Iusto maiores provident quis rem quasi, quisquam odio
+                    doloremque omnis sequi quos nisi accusantium sint dolorum
+                    laboriosam quae eos exercitationem, commodi eligendi.
+                  </p>{" "}
+                </div>
+              </li>
+              <li className="accordion-item">
+                <button className="accordion-header" aria-expanded="false">
+                  <h3>Animation</h3>
+                  <span className="icon"></span>
+                </button>
+                <div
+                  className="accordion-content"
+                  role="region"
+                  aria-hidden="true"
+                >
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Iusto maiores provident quis rem quasi, quisquam odio
+                    doloremque omnis sequi quos nisi accusantium sint dolorum
+                    laboriosam quae eos exercitationem, commodi eligendi.
+                  </p>{" "}
+                </div>
+              </li>
+            </ul>
+            <h2 className="services-title" id="backend">
+              (Back End Services)
+            </h2>
+            <ul className="dropdown-list backend">
+              <li className="accordion-item">
+                <button className="accordion-header" aria-expanded="false">
+                  <h3>Back End Structures</h3>
+                  <span className="icon"></span>
+                </button>
+                <div
+                  className="accordion-content"
+                  role="region"
+                  aria-hidden="true"
+                >
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Voluptatem facere cupiditate consectetur quasi quidem
+                    molestiae, voluptatibus praesentium quo earum, nobis dolor
+                    vel saepe culpa eius consequuntur quas suscipit officiis
+                    maxime?
+                  </p>
+                </div>
+              </li>
+              <li className="accordion-item">
+                <button className="accordion-header" aria-expanded="false">
+                  <h3>Content Management Systems</h3>
+                  <span className="icon"></span>
+                </button>
+                <div
+                  className="accordion-content"
+                  role="region"
+                  aria-hidden="true"
+                >
+                  <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Ipsam in dolores quibusdam doloribus aut animi ipsa quos
+                    repudiandae aperiam impedit laudantium at, suscipit quod,
+                    amet non, molestiae magni! Explicabo, cupiditate?
+                  </p>
+                </div>
+              </li>
+              <li className="accordion-item">
+                <button className="accordion-header" aria-expanded="false">
+                  <h3>User Authentication</h3>
+                  <span className="icon"></span>
+                </button>
+                <div
+                  className="accordion-content"
+                  role="region"
+                  aria-hidden="true"
+                >
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Iusto maiores provident quis rem quasi, quisquam odio
+                    doloremque omnis sequi quos nisi accusantium sint dolorum
+                    laboriosam quae eos exercitationem, commodi eligendi.
+                  </p>
+                </div>
+              </li>
+              <li className="accordion-item">
+                <button className="accordion-header" aria-expanded="false">
+                  <h3>Remote Updating</h3>
+                  <span className="icon"></span>
+                </button>
+                <div
+                  className="accordion-content"
+                  role="region"
+                  aria-hidden="true"
+                >
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Iusto maiores provident quis rem quasi, quisquam odio
+                    doloremque omnis sequi quos nisi accusantium sint dolorum
+                    laboriosam quae eos exercitationem, commodi eligendi.
+                  </p>
+                </div>
+              </li>
+              <li className="accordion-item">
+                <button className="accordion-header" aria-expanded="false">
+                  <h3>Cloud Storage</h3>
+                  <span className="icon"></span>
+                </button>
+                <div
+                  className="accordion-content"
+                  role="region"
+                  aria-hidden="true"
+                >
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Iusto maiores provident quis rem quasi, quisquam odio
+                    doloremque omnis sequi quos nisi accusantium sint dolorum
+                    laboriosam quae eos exercitationem, commodi eligendi.
+                  </p>
+                </div>
+              </li>
+              <li className="accordion-item">
+                <button className="accordion-header" aria-expanded="false">
+                  <h3>Hosting</h3>
+                  <span className="icon"></span>
+                </button>
+                <div
+                  className="accordion-content"
+                  role="region"
+                  aria-hidden="true"
+                >
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Iusto maiores provident quis rem quasi, quisquam odio
+                    doloremque omnis sequi quos nisi accusantium sint dolorum
+                    laboriosam quae eos exercitationem, commodi eligendi.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <footer role="contentinfo">
+          <div className="page-number-wrapper">
+            <div className="first">01</div>
+            <div className="second">02</div>
+          </div>
+        </footer>
       </main>
-      <footer className={styles.footer}>
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+      <GsapAnimation />
+      <Dropdown />
     </div>
   );
 }
