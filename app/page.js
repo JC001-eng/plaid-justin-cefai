@@ -127,7 +127,7 @@ export default function Home() {
                     Iusto maiores provident quis rem quasi, quisquam odio
                     doloremque omnis sequi quos nisi accusantium sint dolorum
                     laboriosam quae eos exercitationem, commodi eligendi.
-                  </p>{" "}
+                  </p>
                 </div>
               </li>
               <li className="accordion-item">
@@ -145,7 +145,7 @@ export default function Home() {
                     Iusto maiores provident quis rem quasi, quisquam odio
                     doloremque omnis sequi quos nisi accusantium sint dolorum
                     laboriosam quae eos exercitationem, commodi eligendi.
-                  </p>{" "}
+                  </p>
                 </div>
               </li>
             </ul>
